@@ -1,0 +1,27 @@
+.m-scene {
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+
+  /** Reverse "exit" animations */
+  &.is-exiting {
+      .scene_element {
+        animation-direction: alternate-reverse;
+      }
+  }
+}
